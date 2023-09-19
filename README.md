@@ -19,3 +19,27 @@ Contributions are welcome! If you'd like to contribute your solutions for Hacker
 5. Create a pull request.
 
 Please ensure your code is well-commented and follows best coding practices.
+
+## Visual Studio Code (VSCode) Configuration
+
+If you're using Visual Studio Code (VSCode) for development, you can use the following configuration for launching and debugging your shell scripts.
+
+### `.vscode/launch.json`
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Shell Script Debug",
+      "type": "shell",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "args": [],
+      "env": {},
+      "externalConsole": false,
+      "MIMode": "gdb"
+    }
+  ]
+}
